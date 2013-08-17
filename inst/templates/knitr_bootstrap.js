@@ -153,7 +153,7 @@ $(function() {
   /* if using render_html() hook, make functions links to custom R search */
   /*search in ggplot documentation or inside-r.org */
   $("span.functioncall").replaceWith(function(){
-    return '<a target="_blank" href="http://www.google.com/search?sourceid=navclient&gfns=1&\
+    return '<a target="_blank" href="//www.google.com/search?sourceid=navclient&gfns=1&\
 q=site:docs.ggplot2.org/current OR site:inside-r.org ' +
     $(this).text() + '">' + $(this).text()+'</a>'
   });

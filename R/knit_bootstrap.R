@@ -138,10 +138,10 @@ bootstrap_HTML = function(input, output = NULL, boot_style=NULL,
 }
 
 
-style_url="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/$style/bootstrap.min.css"
+style_url="//netdna.bootstrapcdn.com/bootswatch/2.3.1/$style/bootstrap.min.css"
 link_pattern='<link[^\n\r]+rel="stylesheet"[^\n\r]+href='
-default_boot_style='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css'
-default_code_style='http://yandex.st/highlightjs/7.3/styles/default.min.css'
+default_boot_style='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css'
+default_code_style='//yandex.st/highlightjs/7.3/styles/default.min.css'
 nav_pattern='nav = "[^"]+"'
 thumb_pattern='thumbsize = "[^"]+"'
 show_code_pattern='show_code = [^;]+;'
@@ -280,47 +280,47 @@ sub_ext = function(x, ext) {
 escape = function(string) gsub("([\"$`\\])", "\\\\\\1", string)
 
 boot_styles = c(
-  'default'='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css',
-  'amelia'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/amelia/bootstrap.min.css',
-  'cerulean'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/cerulean/bootstrap.min.css',
-  'cosmo'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/cosmo/bootstrap.min.css',
-  'cyborg'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/cyborg/bootstrap.min.css',
-  'journal'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/journal/bootstrap.min.css',
-  'flatly'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/flatly/bootstrap.min.css',
-  'readable'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/readable/bootstrap.min.css',
-  'simplex'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/simplex/bootstrap.min.css',
-  'slate'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/slate/bootstrap.min.css',
-  'spacelab'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/spacelab/bootstrap.min.css',
-  'spruce'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/spruce/bootstrap.min.css',
-  'superhero'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/superhero/bootstrap.min.css',
-  'united'='http://netdna.bootstrapcdn.com/bootswatch/2.3.1/united/bootstrap.min.css'
+  'default'='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css',
+  'amelia'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/amelia/bootstrap.min.css',
+  'cerulean'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/cerulean/bootstrap.min.css',
+  'cosmo'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/cosmo/bootstrap.min.css',
+  'cyborg'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/cyborg/bootstrap.min.css',
+  'journal'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/journal/bootstrap.min.css',
+  'flatly'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/flatly/bootstrap.min.css',
+  'readable'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/readable/bootstrap.min.css',
+  'simplex'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/simplex/bootstrap.min.css',
+  'slate'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/slate/bootstrap.min.css',
+  'spacelab'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/spacelab/bootstrap.min.css',
+  'spruce'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/spruce/bootstrap.min.css',
+  'superhero'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/superhero/bootstrap.min.css',
+  'united'='//netdna.bootstrapcdn.com/bootswatch/2.3.1/united/bootstrap.min.css'
 )
 
 code_styles = c(
-  'default'='http://yandex.st/highlightjs/7.3/styles/default.min.css',
-  'dark'='http://yandex.st/highlightjs/7.3/styles/dark.min.css',
-  'far'='http://yandex.st/highlightjs/7.3/styles/far.min.css',
-  'idea'='http://yandex.st/highlightjs/7.3/styles/idea.min.css',
-  'sunburst'='http://yandex.st/highlightjs/7.3/styles/sunburst.min.css',
-  'zenburn'='http://yandex.st/highlightjs/7.3/styles/zenburn.min.css',
-  'visual studio'='http://yandex.st/highlightjs/7.3/styles/vs.min.css',
-  'ascetic'='http://yandex.st/highlightjs/7.3/styles/ascetic.min.css',
-  'magula'='http://yandex.st/highlightjs/7.3/styles/magula.min.css',
-  'github'='http://yandex.st/highlightjs/7.3/styles/github.min.css',
-  'google code'='http://yandex.st/highlightjs/7.3/styles/googlecode.min.css',
-  'brown paper'='http://yandex.st/highlightjs/7.3/styles/brown_paper.min.css',
-  'school book'='http://yandex.st/highlightjs/7.3/styles/school_book.min.css',
-  'ir black'='http://yandex.st/highlightjs/7.3/styles/ir_black.min.css',
-  'solarized - dark'='http://yandex.st/highlightjs/7.3/styles/solarized_dark.min.css',
-  'solarized - light'='http://yandex.st/highlightjs/7.3/styles/solarized_light.min.css',
-  'arta'='http://yandex.st/highlightjs/7.3/styles/arta.min.css',
-  'monokai'='http://yandex.st/highlightjs/7.3/styles/monokai.min.css',
-  'xcode'='http://yandex.st/highlightjs/7.3/styles/xcode.min.css',
-  'pojoaque'='http://yandex.st/highlightjs/7.3/styles/pojoaque.min.css',
-  'rainbow'='http://yandex.st/highlightjs/7.3/styles/rainbow.min.css',
-  'tomorrow'='http://yandex.st/highlightjs/7.3/styles/tomorrow.min.css',
-  'tomorrow night'='http://yandex.st/highlightjs/7.3/styles/tomorrow-night.min.css',
-  'tomorrow night bright'='http://yandex.st/highlightjs/7.3/styles/tomorrow-night-bright.min.css',
-  'tomorrow night blue'='http://yandex.st/highlightjs/7.3/styles/tomorrow-night-blue.min.css',
-  'tomorrow night eighties'='http://yandex.st/highlightjs/7.3/styles/tomorrow-night-eighties.min.css'
+  'default'='//yandex.st/highlightjs/7.3/styles/default.min.css',
+  'dark'='//yandex.st/highlightjs/7.3/styles/dark.min.css',
+  'far'='//yandex.st/highlightjs/7.3/styles/far.min.css',
+  'idea'='//yandex.st/highlightjs/7.3/styles/idea.min.css',
+  'sunburst'='//yandex.st/highlightjs/7.3/styles/sunburst.min.css',
+  'zenburn'='//yandex.st/highlightjs/7.3/styles/zenburn.min.css',
+  'visual studio'='//yandex.st/highlightjs/7.3/styles/vs.min.css',
+  'ascetic'='//yandex.st/highlightjs/7.3/styles/ascetic.min.css',
+  'magula'='//yandex.st/highlightjs/7.3/styles/magula.min.css',
+  'github'='//yandex.st/highlightjs/7.3/styles/github.min.css',
+  'google code'='//yandex.st/highlightjs/7.3/styles/googlecode.min.css',
+  'brown paper'='//yandex.st/highlightjs/7.3/styles/brown_paper.min.css',
+  'school book'='//yandex.st/highlightjs/7.3/styles/school_book.min.css',
+  'ir black'='//yandex.st/highlightjs/7.3/styles/ir_black.min.css',
+  'solarized - dark'='//yandex.st/highlightjs/7.3/styles/solarized_dark.min.css',
+  'solarized - light'='//yandex.st/highlightjs/7.3/styles/solarized_light.min.css',
+  'arta'='//yandex.st/highlightjs/7.3/styles/arta.min.css',
+  'monokai'='//yandex.st/highlightjs/7.3/styles/monokai.min.css',
+  'xcode'='//yandex.st/highlightjs/7.3/styles/xcode.min.css',
+  'pojoaque'='//yandex.st/highlightjs/7.3/styles/pojoaque.min.css',
+  'rainbow'='//yandex.st/highlightjs/7.3/styles/rainbow.min.css',
+  'tomorrow'='//yandex.st/highlightjs/7.3/styles/tomorrow.min.css',
+  'tomorrow night'='//yandex.st/highlightjs/7.3/styles/tomorrow-night.min.css',
+  'tomorrow night bright'='//yandex.st/highlightjs/7.3/styles/tomorrow-night-bright.min.css',
+  'tomorrow night blue'='//yandex.st/highlightjs/7.3/styles/tomorrow-night-blue.min.css',
+  'tomorrow night eighties'='//yandex.st/highlightjs/7.3/styles/tomorrow-night-eighties.min.css'
 )
